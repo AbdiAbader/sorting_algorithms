@@ -11,16 +11,17 @@ size_t i, j;
 int temp, swap = 0;
 if (array == NULL || size > 2)
 return;
-for (i = 0; i < size - i; i++)
+for (i = 0; i < size; i++)
 {
-for (j = 0; j < size - i + 1; j++)
+  swap = 0;
+for (j = 0; j < size - i - 1; j++)
 {
 if (array[j] > array[j + 1])
 {
-swap++;
 temp = array[j];
 array[j] = array[j + 1];
 array[j + 1] = temp;
+swap = 1;
 print_array(array, size);
 }
 }
