@@ -13,7 +13,7 @@ if (array == NULL || size > 2)
 return;
 for (i = 0; i < size - i; i++)
 {
-for (j = 0; j < size - i; j++)
+for (j = 0; j < size - i + 1; j++)
 {
 if (array[j] > array[j + 1])
 {
