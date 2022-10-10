@@ -7,8 +7,9 @@
 */
 void shell_sort(int *array, size_t size)
 {
-int gap = 1, i, j, tmp;
-for (; gap < size / 3; (gap * 3) + 1)
+size_t gap = 1, i, j;
+int tmp;
+for (; gap < size / 3; gap = (gap * 3) + 1)
 ;
 while (gap)
 {
